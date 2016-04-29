@@ -49,8 +49,7 @@ public class TesteInsercaoDescricaoEmAtividades {
 		PaginaHome pageHome = new PaginaHome();
 		pageHome.getBotaoAtividades().click();
 		
-		PaginaAtividades pageAtividade = new PaginaAtividades();
-		pageAtividade.getAtividadeCadastrada().click();
+	
 		
 	}
 }
