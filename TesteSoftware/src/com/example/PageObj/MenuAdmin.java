@@ -9,14 +9,29 @@ public class MenuAdmin {
 	
 	private WebElement botaoIdiomas;
 	private WebElement botaoIdiomaIngles;
+	private WebElement botaoAdmin;
 	
 
 	public MenuAdmin() {
 		
 		botaoIdiomas = Driver.getDriver().findElement(By.linkText("Idiomas"));
 		botaoIdiomaIngles = Driver.getDriver().findElement(By.xpath("//div[@id='cssmenu']/ul/li/ul/li[2]/a/span/span"));
+		botaoAdmin = Driver.getDriver().findElement(By.linkText("Admin"));
 		
 	}
+	
+	
+
+	public WebElement getBotaoAdmin() {
+		return botaoAdmin;
+	}
+
+
+
+	public void setBotaoAdmin(WebElement botaoAdmin) {
+		this.botaoAdmin = botaoAdmin;
+	}
+
 
 
 	public WebElement getBotaoIdiomas() {
